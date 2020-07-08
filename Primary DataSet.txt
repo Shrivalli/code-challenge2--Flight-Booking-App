@@ -1,0 +1,10 @@
+insert into FlightDetails values('Singapore','India',10,4000)
+insert into FlightDetails values('Malaysia','India',200,6000)
+
+select * from FlightDetails
+
+
+insert into BookingDetails values (1456,'Ram','5/6/2020',4,1,16000)
+insert into BookingDetails values (5687,'Shyam','8/15/2020',3,2,18000)
+
+select * from BookingDetails

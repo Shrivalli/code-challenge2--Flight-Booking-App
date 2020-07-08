@@ -1,0 +1,22 @@
+Create Database FlightBookingDB
+
+use FlightBookingDB
+
+create table FlightDetails
+(
+FlightID int primary key identity,
+Source nvarchar(50),
+Destination nvarchar(50),
+AvailableTickets int,
+CostperTicket int
+)
+
+create table BookingDetails
+(
+PassengerID int primary key,
+PassengerName nvarchar(50),
+JourneyDate DateTime,
+NoOfTickets int,
+FlightID int references FlightDetails(FlightID),
+TotalCost int
+)
